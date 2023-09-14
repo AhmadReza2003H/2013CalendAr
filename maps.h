@@ -1,10 +1,10 @@
-#ifndef _DAY_H
-#define _DAY_H  
+#ifndef _YEARDETAILS_H
+#define _YEARDETAILS_H  
 #include <unordered_map>
 #include <string>
 using namespace std;
-extern unordered_map<int, int> mounthDay;
+extern const unordered_map<int, int> mounthDay;
 extern const int DaysOfYear;
-extern unordered_map<int, string> mounthName;
-extern unordered_map<int, string> dayName;
+extern  const unordered_map<int, string> mounthName;
+extern const unordered_map<int, string> dayName;
 #endif

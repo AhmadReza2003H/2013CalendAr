@@ -1,9 +1,10 @@
-#ifndef _PROJECT2_H_
-#define _PROJECT2_H_
+#ifndef _DATE_H_
+#define _DATE_H_
 #include "maps.h"
 class Date{
     public:
         Date(int day , int mounth);
+        Date(int dayOfYear);
         int getDay() const;
         int getMounth() const;
         int getDayOfYear() const;
@@ -17,6 +18,7 @@ class Date{
         int dayOfYear;
         int mounth;
         int remainDays;
+        void calculateDate();
 };
 
 #endif
