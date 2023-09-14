@@ -30,7 +30,7 @@ Date Date::plusDay(int day) const{
         while(true){
             if(day + day > mounthDay.at(newMounth)){
                 newDay -= mounthDay.at(newMounth);
-                newMounth;
+                newMounth++;
             } else {
                 break;
             }
