@@ -35,21 +35,11 @@ Date Date::setDate(int day , int mounth) const {
 }
 
 Date Date::plusDay(int day) const {
-    if(day > this->remainDays || day < 0){
-        throw "Invalid Argument";
-    } else {
-        int newDay = this->dayOfYear + day;
-        return Date(newDay);
-    }
+    return Date(this->dayOfYear + day);
 }
 
 Date Date::minusDay(int day) const {
-    if(day > this->dayOfYear || day < 0){
-        throw "Invalid Argument";
-    } else {
-        int newDay = this->dayOfYear - day;
-        return Date(newDay);
-    }
+    return Date(this->dayOfYear - day);
 }
 
 void Date::calculateDate() {
